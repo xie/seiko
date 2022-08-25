@@ -1,4 +1,12 @@
 {
+  "author": "Hugh Xie",
+  "contributors": [
+    "Hugh Xie"
+  ],
+  "bugs": {
+    "url": "https://github.com/xie/seiko/issues"
+  },
+  "repository": "xie/seiko",
   "name": "seiko",
   "version": "1.0.0",
   "description": "A collection of Date tools",
@@ -18,7 +26,6 @@
   "keywords": [
     "date"
   ],
-  "author": "Hugh Xie",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^28.1.8",
