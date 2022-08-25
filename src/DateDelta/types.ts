@@ -1,13 +1,13 @@
-export enum TimeFormat {
-  'milliseconds',
-  'seconds',
-  'minutes',
-  'hours',
-  'days',
-  'years',
+export enum TimeOptions {
+  'milliseconds' = 'milliseconds',
+  'seconds' = 'seconds',
+  'minutes' = 'minutes',
+  'hours' = 'hours',
+  'days' = 'days',
+  'years' = 'years',
 }
 
 export interface Options {
-  timeFormat?: TimeFormat;
+  timeFormat?: keyof typeof TimeOptions;
   ignoreTz?: boolean;
 }

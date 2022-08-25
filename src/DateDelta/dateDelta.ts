@@ -1,4 +1,4 @@
-import { Options, TimeFormat } from './types';
+import { Options, TimeOptions } from './types';
 import { convertTime } from '../ConvertTime';
 
 function dateDelta(d1: Date, d2: Date, options?: Options): number {
@@ -10,7 +10,7 @@ function dateDelta(d1: Date, d2: Date, options?: Options): number {
   }
 
   const diff = d1Milliseconds - d2Milliseconds;
-  const convertedDiff = convertTime(diff, options?.timeFormat ?? TimeFormat.milliseconds);
+  const convertedDiff = convertTime(diff, options?.timeFormat ?? TimeOptions.milliseconds);
 
   return convertedDiff;
 }

@@ -1,25 +1,27 @@
-import { TimeFormat } from '../DateDelta/types';
+import { TimeOptions } from '../DateDelta/types';
 
-function convertTime(time: number, format: TimeFormat) {
+function convertTime(time: number, format: keyof typeof TimeOptions): number {
   switch (format) {
-    case TimeFormat.milliseconds:
+    case TimeOptions.milliseconds:
       return time;
 
-    case TimeFormat.seconds:
+    case TimeOptions.seconds:
       return time / 1000;
 
-    case TimeFormat.minutes:
+    case TimeOptions.minutes:
       return time / 1000 / 60;
 
-    case TimeFormat.hours:
+    case TimeOptions.hours:
       return time / 1000 / 60 / 60;
 
-    case TimeFormat.days:
+    case TimeOptions.days:
       return time / 1000 / 60 / 60 / 24;
 
-    case TimeFormat.years:
+    case TimeOptions.years:
       return time / 1000 / 60 / 60 / 24 / 365;
   }
+
+  return time;
 }
 
 export default convertTime;
