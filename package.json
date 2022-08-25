@@ -1,6 +1,6 @@
 {
   "name": "seiko",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A collection of Date tools",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
