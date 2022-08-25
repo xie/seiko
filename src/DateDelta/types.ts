@@ -9,5 +9,4 @@ export enum TimeOptions {
 
 export interface Options {
   timeFormat?: keyof typeof TimeOptions;
-  ignoreTz?: boolean;
 }
